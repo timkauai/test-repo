@@ -14,7 +14,7 @@ const router = express.Router();
 
 let emails = [];
 
-app.use(cors());
+app.use(cors(true);
 app.use(
   bodyParser.urlencoded({
     extended: false,
