@@ -14,12 +14,7 @@ const router = express.Router();
 
 let emails = [];
 
-app.use(cors(true))
-app.use(
-  bodyParser.urlencoded({
-    extended: false,
-  })
-);
+app.use(cors(true));
 app.use(bodyParser.json());
 
 router.get("/", (req, res) => {
